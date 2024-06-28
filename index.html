@@ -17,10 +17,12 @@
     <link rel="stylesheet" href="/assets/css/header.css">        
     <link rel="stylesheet" href="/assets/css/acordeon.css">
     <link rel="stylesheet" href="assets/css/languages.css">
+    <link rel="stylesheet" href="/assets/css/portfolio.css">
+    <link rel="stylesheet" href="/assets/css/experience.css">
 </head>
 
 <body>
-    <div class="main">
+    <main class="main">
         <header class="header">
             <img src="/assets/img/my-photo.jpg" alt="Foto de Matheus" class="photo">
 
@@ -31,14 +33,16 @@
             <div class="information">
                 <p class="job">Desenvolvedor</p>
                 <p class="location">Pinhalzinho-SC</p>
-                <p class="phone">(49) 99934-3671</p>
-                <p class="email">matheustogni64@gmail.com</p>
+                <p class="phone">
+                    <a href="https://wa.me/49999343671" target="_blank">(49) 9934-3671</a></p>
+                <p class="email">
+                    <a href="mailto:matheustogni64@gmail.com">matheustogni64@gmail.com</a></p>
             </div> 
         </header>
 
-        <section class="acordeon open">
+        <section class="acordeon">
             <button class="trigger" type="button">
-                    Idiomas
+                    <h2>Idiomas</h2>
             </button>
 
             <div class="content">
@@ -48,7 +52,44 @@
                 </ul>
             </div>
         </section>
-    </div>
+
+        <section class="acordeon">
+            <button class="trigger" type="button">
+                    <h2>Portifólio</h2>
+            </button>
+
+            <div class="content">
+                <ul class="portfolio">
+                    <li>
+                        <h3 class="title github">Meu GitHub</h3>
+                        <a href="https://github.com/MatheusTogni" target="_blank">https://github.com/MatheusTogni</a>
+                    </li>
+                    <li>
+                        <h3 class="title github">Pokedex</h3>
+                        <a href="https://github.com/MatheusTogni/Pokedex" target="_blank">https://github.com/MatheusTogni/Pokedex</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="acordeon open">
+            <button class="trigger" type="button">
+                    <h2>Experiência Profissional</h2>
+            </button>
+
+            <div class="content">
+                <ul class="experience">
+                    <li>
+                        <h3 class="title">Auxiliar de Ti / Zagonel S.A</h3>
+                        <p class="period">01/06/2022 - Atual</p>
+                        <p>
+                            Teste
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
 
     <script src="/assets/js/acordeon.js"></script>
 </body>
